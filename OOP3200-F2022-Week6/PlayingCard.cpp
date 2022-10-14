@@ -1,5 +1,8 @@
 #include "PlayingCard.h"
 #include <stdexcept>	// for invalid_argument
+#include <sstream>
+#include <iomanip>
+#include <iostream>
 
 // Static data member initialization
 const std::string PlayingCard::CARD_SUIT[] = { "Spades", "Hearts", "Diamonds", "Clubs" };
@@ -252,4 +255,17 @@ int PlayingCard::GetDefaultValue() const
 
 	// return default value
 	return defaultValue;
+}
+
+std::ostream& operator<<(std::ostream& out, const PlayingCard& rhs)
+{
+	out << rhs.to_string();
+	return out;
+}
+
+std::string PlayingCard::to_string() const
+{
+	std::stringstream stream;
+	stream << GetRank() << " of " << GetSuit() << " Value: " << GetValue() << std::endl;
+	return stream.str();
 }

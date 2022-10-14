@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PlayingCard.cpp" />
+    <ClCompile Include="StandardDeck.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayingCard.h" />
+    <ClInclude Include="StandardDeck.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

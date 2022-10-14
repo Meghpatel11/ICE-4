@@ -53,6 +53,12 @@ public:
 	//	Public member variables
 	bool IsFaceUp; // true if face-up, false if face-down
 
+	// operator overloading
+	friend std::ostream& operator<<(std::ostream& out, const PlayingCard& rhs);
+
+	// Overriden Methods
+	std::string to_string() const;
+
 private:
 
 	int myRankIndex{}; // an int to represent the rank {1 - 13}

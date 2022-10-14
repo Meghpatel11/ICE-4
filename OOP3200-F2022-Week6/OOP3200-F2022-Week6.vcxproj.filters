@@ -21,9 +21,15 @@
     <ClCompile Include="PlayingCard.cpp">
       <Filter>objects</Filter>
     </ClCompile>
+    <ClCompile Include="StandardDeck.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PlayingCard.h">
+      <Filter>objects</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardDeck.h">
       <Filter>objects</Filter>
     </ClInclude>
   </ItemGroup>
