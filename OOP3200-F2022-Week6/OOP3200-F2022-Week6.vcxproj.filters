@@ -22,7 +22,7 @@
       <Filter>objects</Filter>
     </ClCompile>
     <ClCompile Include="StandardDeck.cpp">
-      <Filter>core</Filter>
+      <Filter>objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

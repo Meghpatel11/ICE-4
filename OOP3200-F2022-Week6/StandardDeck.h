@@ -25,6 +25,7 @@ public:
 	void Initialize();
 
 	// overriden methods
+	std::string to_string() const;
 
 private:
 	// private instance members

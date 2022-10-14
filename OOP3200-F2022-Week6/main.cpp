@@ -1,14 +1,13 @@
 #include <iostream>
 
-#include "PlayingCard.h"
+#include "StandardDeck.h"
+
 
 int main()
 {
-	PlayingCard* card = new PlayingCard("Ace", "Spades", 1, false);
+	StandardDeck* deck = new StandardDeck();
 
-	card->FlipCard();
-
-    std::cout << *card << std::endl;
+    std::cout << deck->to_string() << std::endl;
 }
 
 
